@@ -1,86 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href ="assets/style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
 
-    <title>LRJB's Portfolio</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <a class="navbar-brand" href="index.html" id="logo">Lynden Bolden</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-          </ul>
+<div class="jumbotron jumbotron-fluid">
+    <header>
+Javascripty Quiz
+    </header>
+<body>
+    
+    </div>
+    <div class="container">
+        <div id="question-container" class="hide">
+          <div id="question">Question</div> 
+          <div id="answer-buttons" class="btn-grid">
+               <button type="button" class="btn btn-primary btn-lg">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+          </div> 
         </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-    <!-- End of navbar -->
-    <!--Background Image-->
-    <div id="bg-img"> </div>
-
-    <!-- Start of container -->
-  <main class="container">
-    <section class="row">
-      <div class="col-md-8">
-        <article class="block">
-          <h1 class="block-header">About Me</h1>
-          <hr />
-          <img src="assets/imgs/natebeach.jpeg" alt="" id="about-image" />
-          <p>I am an aspiring software developer, My intial intrest in computers began in High School 
-            where I was enrolled in a computer maintenance program. Withing one year I had my Comptia 
-            Aplus certification. Soon after I was exposed to my first software with oracle, and cisco
-            soon after
-          </p>
-          <br />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
-  <!-- End of container -->
-   <!-- Start of footer -->
-   <footer class="footer">
-    <div class="two-toned-footer-color"></div>
-    <p class="text-muted text-muted-footer text-center">
-      &copy; Copyright Lynden Bolden
-    </p>
-  </footer>
-  <!-- End of footer -->
-
-    <!-- jQuery CDN -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Bootstrap CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
-
-  </body>
+    <div class="controls">
+        <button id="start-btn" class="start-btn btn">Begin Quiz</button>
+        <button id="next-btn" class="next-btn btn hide">Next </button>
+    </div>
+    </div>
+    <button id="submit">Get Results</button>
+<div id="results"></div>
+</body>
 </html>
